@@ -1,0 +1,78 @@
+{
+  "name": "mediamarktsaturn_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "jest",
+    "start": "babel-node buildScripts/srcServer.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>/testSetupTS.js",
+    "transform": {
+      ".(ts|tsx|js|jsx)": "ts-jest"
+    },
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "jsx",
+      "tsx"
+    ],
+    "testMatch": [
+      "**/src/**/*.test.tsx"
+    ]
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.8",
+    "@types/jest": "^22.1.1",
+    "@types/node": "^9.4.0",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.1",
+    "body-parser": "^1.18.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "express": "^4.16.2",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.1.4",
+    "jest-cli": "^22.1.4",
+    "jest-runtime": "^22.1.4",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.1.3",
+    "react-scripts": "^1.1.0",
+    "react-scripts-ts": "^2.13.0",
+    "regenerator-runtime": "^0.11.1",
+    "source-map-loader": "^0.2.3",
+    "ts-jest": "^22.0.2",
+    "typescript": "^2.6.2",
+    "typescript-babel-jest": "^1.0.5",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.4",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.35",
+    "@types/react-dom": "^16.0.3",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "style-loader": "^0.20.1",
+    "styled-components": "^3.1.4",
+    "ts-loader": "^3.3.1",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
